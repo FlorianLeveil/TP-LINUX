@@ -1,0 +1,36 @@
+#!/bin/sh
+
+res=$(expr $RANDOM \* 1000 / 32765)
+
+var1=Entrer_une_valeur
+check=0
+compteur=0
+
+echo $var1
+
+while test "$check" -eq 0
+do
+  read var
+  if test -n "$var" -a "$var" -eq "$var" 2> /dev/null
+  then
+       if test "$var" -eq "$res"
+       then
+         echo BRAVO
+         echo Vous_avez_réussis_en:
+         echo $compteur
+         check=1
+
+       elif test "$var" -lt "$res"
+       then
+          echo Plus
+          ((compteur+=1))
+
+       elif test "$var" -gt "$res"
+       then
+         echo Moins
+         ((compteur+=1))
+       fi
+    else
+    echo La_valeur_n\'est_pas_bonne 
+   fi
+done;
