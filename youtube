@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if test -d /home/$USER/Musique ; then
+if test -d /home/$USER/Musique || /home/$USER/Music ; then
 	dldir=/home/$USER/Musique/
 	echo "Le fichier sera enregistrer dans /home/USER/Musique"
 	echo $dldir
