@@ -9,4 +9,4 @@ Si vous en avez marre de jouer vous pouvez toujours faire un Ctrl + C pour en so
 Se script vous permet de télécharger la musique d'un vidéo Youtube au format mp3 et de vous la placer dans le dossier Musique dans vôtre home.
 Si vous n'avez pas de dossier Musique pas de soucis le script va en créer un pour vous !
 ## [3. Un outil de sauvegarde]()
-En cours de fabrication.
+Script fait avec Simon Laborde
